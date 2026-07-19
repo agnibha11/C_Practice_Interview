@@ -1,0 +1,4 @@
+x = 5, y = 5 Post increment operator
+6 Updated value
+int j = ... this thing is Undefined Behaviour (UB) since the depending upon the compiler it will decide to 
+evaluate the LHS or RHS of the + operator

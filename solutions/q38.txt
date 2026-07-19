@@ -1,0 +1,9 @@
+The array name is essentially a pointer int*.
+Now in the main scope, the system knows the exact array, hence prints the length of the array in totality
+But when we pass the arr as a argument, we are essentially passing the aray pointer to &arr[0], this is called
+"Array to Pointer Decay" which is done since passing the entire aray would be very time consuming
+This, inside the function, it prints the size of the pointer, which is 64 bits or 8 bytes in 64 bits machine
+
+Output:
+in main: 20
+in func: 8

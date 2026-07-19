@@ -1,0 +1,13 @@
+The program goes like this
+f(65982)
+return 2 + f(6598)
+return 8 + f(659)
+return 9 + f(65)
+return 5 + f(6)
+return 6 + f(0)
+return 0
+
+So the addition goes like: 0 + 6 + 5 + 9 + 8 + 2 = 30
+This gets printed
+
+Output: 30

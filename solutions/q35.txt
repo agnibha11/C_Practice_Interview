@@ -1,0 +1,3 @@
+The semicolon after the first if means an empty body, so it will print A, 
+the second one is assignment not comparison, so x = 10 and its true, will B will print
+OUTPUT: AB x=10
