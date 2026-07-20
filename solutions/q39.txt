@@ -1,0 +1,7 @@
+This is a string library problem
+strcat concatenates them as 123Arnab Paul
+strcpy copies and overwrrites it to Arnab Paul
+strcmp return the sign of the first difference, which is 'C' and '1'. Since C > 1, the result will be some positive value
+OUTPUT:
+Arnab Paul
+#positive number

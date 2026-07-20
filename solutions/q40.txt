@@ -1,0 +1,6 @@
+by default if no assignment, then 
+jan is 0, feb is 1, mar is 2,
+then april forced to 5, so may = 6, jun = 7
+
+OUTPUT:
+8
