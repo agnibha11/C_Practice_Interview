@@ -1,0 +1,17 @@
+Loop boundary problem
+For the first loop, the sum evaluates as:
+0 = 0 + 0;
+0 = 0 + 1;
+1 = 1 + 2;
+....
+Which is the sum from 0 to 9 = 45, and i ends at 10
+
+For the second loop
+unsigned char is 1 byte in size, so 8 bits, meaning the max it can represent is 255,
+so n < 255 will always be true, after that, it will wrap to 0. So the only condition is guard < 1000
+So when guard is 1000, n is 1000 - 256 - 256 - 256 = 232 (1000 mod 256)
+
+
+OUTPUT:
+45 10
+232 1000

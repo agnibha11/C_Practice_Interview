@@ -1,0 +1,8 @@
+Pointer arithmatic problem
+b points to a row with size of 4 bytes, so by pointer arithmatic
+*(b+2) means b + 2 *(sizeof(type)) and suzeof(type) is 4 here
+so we get 0x7C, then its normal addition by 2, so, 0x7E
+and by dereferencing the pointer pointing to 0x7E, we get the value in the 3rd element of 3rd row which is if
+OUTPUT:
+0x7E
+I

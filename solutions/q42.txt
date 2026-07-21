@@ -1,0 +1,4 @@
+This is an example of errors while using Macros
+The first print will evaluate it as 3 + 1 * 3 + 1, where not precedence of operator will be applicable so we get 3 + 3 + 1 = 7
+The next print does this correctly so we evaluate 16 / (2 * 2) = 4
+The last print evaluates (i++) * (i++), which is UNDEFINED BEHAVIOUR, since the compiler does not know whether to evaluate the RHS or LHS first
