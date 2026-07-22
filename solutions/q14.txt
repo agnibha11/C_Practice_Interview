@@ -1,0 +1,12 @@
+the 1 << 31 will make the result as 0x8000000, ans since this is int, C will infer the right shift as arithmatic shift instead of logical.
+Hence the final result will be 0xFFFFFFFF, which is 2's complement of -1.
+
+But the next one is unsigned so the right shift will be logical shift and not arithmatic shift, with final result as 0x00000001
+
+The third is again  int, so arithmatic right shift. -8 is 0xFFFFFFF8 in 2's complement, so -8 >> 1 will be
+0xfffffffC, which is -4.
+OUTPUT
+-1
+1
+-4
+

@@ -1,0 +1,6 @@
+This is operator precedence trap
+x & 1 will give 0
+but in x & 1 == 0, the == has more precedence, so this evaluates as x & (1 == 0), which is 0
+
+OUTPUT:
+odd

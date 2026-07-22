@@ -1,0 +1,6 @@
+This is in 2's complement arithmatic
+Since in 2's complement, all bits above the first 1 (starting from left) is 0, so
+x & -x will give us the lowest bit that is 1. This can be used for one-hot extractions
+
+x-1 will have all bits below the first set bit as 1s, so this gurantees, that the final result x | x-1 will have all 1's belofe the first set bit of x.
+This can be useful for building masks, where the bits lower than the first one has to be kept unmasked.
