@@ -1,0 +1,7 @@
+For structs, the total struct is aligned with the largest member alignment
+But each member is aligned to its own size
+
+s1 = 1 + pad(3) + 4 + 1 + pad(3) - so 12 bytes as int is largest
+s2 = 1 + 1 + pad(2) + 4 - so 8 bytes, which is lesser than s1, due to rearrangement of structs
+s3 = 8 + 8 - 16 bytes, both of same size
+s4 = 1 + pad(7) + 8 + 1 + pad(7) - so 24 bytes, since largest is double
