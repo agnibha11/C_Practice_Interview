@@ -1,0 +1,11 @@
+The system is 64 bit, which means int is 32 bits and char is 1 byte or 8 bits
+str thus has a size of 20 bytes, arr has 5 * 4 = 20 bytes
+
+strlen will print length of the string
+
+void * is a pointer and in a 64 bit machine, pointers are 8 bytes
+
+OUTPUT:
+20 5
+20 5
+1, 4, 8
