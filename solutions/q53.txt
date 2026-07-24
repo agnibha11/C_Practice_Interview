@@ -1,0 +1,8 @@
+This is a classic pass by value and pass by pointer problem
+update_v passes the value so the original is not updated
+update_p passes the pointer, so the original is updated
+
+
+OUTPUT:
+10 55
+99
