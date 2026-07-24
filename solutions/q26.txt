@@ -7,3 +7,10 @@ This is needed in the following situations
 2. Variables shared between ISRs of Interrupts
 3. Variables shared between threads/core without synchronization
 
+
+E.g.
+volatile int flag = 0;
+while(flag == 0){}
+
+Without volatile, the compiler would read flag only once since it is not updated inside the loop,
+But now, the value of flag register is read every cycle due to volatile
