@@ -1,0 +1,12 @@
+This is classic signed/unsigned comparison trap
+a is stored in 2's complement as 0xFFFFFFFF
+b is stored as 0x00000001
+
+During the comparison, the a is much larger than b, so its true
+
+During the print, the -1 is converted to unsigned, meaning 4294967295
+
+OUTPUT:
+
+-1 > 1 (?!)
+4294967295
