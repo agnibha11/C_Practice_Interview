@@ -1,0 +1,12 @@
+In x86 gcc, char is always signed
+c is now 0xFF which is -1
+u is unsigned so stored at 255
+
+c becomes 0, u rolls over to 0 as 256 has 0s in last 8 bits
+
+t is type casted from int to char, so only the last 8 bits carry over
+Thus t = 0x41 which is 65 in decimal
+
+OUTPUT:
+0 0
+65
