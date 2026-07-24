@@ -1,0 +1,4 @@
+#define is a textual macro that simply expands to the original text when used
+PTR1 a , b expands to int * a, b, so a is a pointer, b is only int
+
+typedef creates a real data type, so c and d are both int * now.
