@@ -1,0 +1,8 @@
+volatile tells the compiler the value can change outside the normal program flow, so it must not cache it in a register, reorder or delete
+'redundant' reads/writes - every access in the source becomes a real load/store on the bus
+
+This is needed in the following situations
+1. Memory mapped hardware or peripherals
+2. Variables shared between ISRs of Interrupts
+3. Variables shared between threads/core without synchronization
+
