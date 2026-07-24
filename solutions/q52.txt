@@ -1,0 +1,2 @@
+A struct lays the memrber out sequentially in the manner they are defined, with extra padding for the memnbers to match the size of the largest member in it
+A union overlays all the members on the same storage whose size os of the largest member in it
