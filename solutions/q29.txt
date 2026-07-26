@@ -1,0 +1,3 @@
+f1 is broken since the pointers exist only in the stack memory, and the stack memory dies the moment the function is returned, so return &x will return an address that is no longer valid
+f2 is broken since the pointer p was never initialized, so it points to some garbage location
+f3 has no issues since the malloc will allocate the memory on the heap instead of the stack, and the heap will outlive the function
