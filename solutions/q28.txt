@@ -1,0 +1,6 @@
+Thumb Rule: Read them right to left
+
+1. p is a pointer to a int that is constant, so the pointer can change but the pointed to value can't.
+2. p is a pointer to a constant int, exactly same as above
+3. p is a constant ppointer to an int, meaning the pointer cant change but it can modify the value at the pointed to location
+4. p is a pointer to an int that is constant and volatile, meaning the pointer can change, but the pointed to value can't be changed by the program, but it can be changed outside the program (volatile)
