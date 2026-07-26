@@ -1,0 +1,1 @@
+If the ISR fires between the main's load and store, it will cause a Race Condition
