@@ -1,0 +1,18 @@
+Say that
+Variable Address Data
+x        0xA     10
+py       0xB     0xA
+ppz      0xC     0xB
+
+the program is traced as:
+f(10, 0xA, 0xB)
+**ppz means *(*ppz) which is *(0xA) which is x, so
+Variable Address Data
+x        0xA     12
+*py means *(0xA) which is also x so
+Variable Address Data
+x        0xA     13
+the last x updated only changes the pass-by value x, not the x written in the main program
+Hence the output is:
+OUTPUT:
+13
