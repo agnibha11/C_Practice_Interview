@@ -1,0 +1,16 @@
+Say that the integer pinter starts at 0x1
+p is int pointer, so it is incrementd by 4
+c is a character pointer, so it gets incremented by 1
+
+c+8 will point to 8th byte, which is 30, and we typecast to int * to ensure the entire 4 bytes is read now (i.e. 30)
+
+p+1 pointes 0x5 and p points to 0x1, So the pointer subtraction arithmatic is applied using char * = (0x5-0x1)/sizeof(char *)
+
+char * is 1 byte sized so q points to Address starting from  't'
+NOTE: the compiler automatically adds a '\0' null terminator at the end of the string, which is how the print understands where to terminate printing
+OUTPUT:
+30
+30
+4
+the best course
+
