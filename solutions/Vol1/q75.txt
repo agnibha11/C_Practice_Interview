@@ -1,4 +1,4 @@
 OUTPUT:
-hello
+Hello
 
 Now the program crashes as p points to a read-only literal
