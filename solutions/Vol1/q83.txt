@@ -1,0 +1,9 @@
+static means the variable is created only once in the Data Segment and retained even after a function collapses
+It is created only once during compile time
+
+count value is retaied across function call
+
+OUTPUT:
+11
+21
+31
