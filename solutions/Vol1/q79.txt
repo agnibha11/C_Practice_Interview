@@ -1,0 +1,6 @@
+do while esecutes the body atleast once
+
+while might not execute it a all
+
+OUTPUT:
+0 | i=3
