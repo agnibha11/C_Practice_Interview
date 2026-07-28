@@ -1,0 +1,6 @@
+p points to an int array of 10 ints
+
+1. p[10] is out of bounds, (heap buffer overflow)
+2. The heap has already been freed, so Undefined Behaviour
+3. double free corrupts the allocator
+4. reassigning q without freeing the heap is memort leakage
