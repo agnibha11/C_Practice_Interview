@@ -1,0 +1,5 @@
+p1 is an Array of 3 pointers to int, so has a size of 8 * 3 since all pointers are 8 bytes on a 64 bit machine
+
+p2 is one pointer to an array of 3 ints, so sizeof is 12 bytes.
+
+This is because [] has greater preference than * operator, so p1 is evaluated as *(p[3]), which is an array of 3 pointers to int
