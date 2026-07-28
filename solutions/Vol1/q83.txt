@@ -3,6 +3,8 @@ It is created only once during compile time
 
 count value is retaied across function call
 
+static means these acts like states tht persist in a register
+
 OUTPUT:
 11
 21
