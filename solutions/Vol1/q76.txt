@@ -1,0 +1,7 @@
+size does not evaluate the operand
+
+arr is the array of 32 bits
+
+OUTPUT:
+4 5
+8
