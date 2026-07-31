@@ -1,0 +1,7 @@
+The two rules of struct are:
+1. each member must start at an address that is a multiple pf its own size
+2. the total size of the struct must be a multiple of its largest member
+
+s1: 2 + 1 + pad(1) + 2 = 6 bytes
+s2: 1 + pad(1) + 2 + 4 + 8 = 16 bytes
+s3: 1 + pad(7) + 8 + 2 + pad(2) + 4 + 1 + pad(7) = 32 
