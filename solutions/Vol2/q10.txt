@@ -1,0 +1,10 @@
+unless specifically typecasted, the bit shifts are always operated on int
+
+if shift count equals data width, thats UNDEFINDE BEHAVIOUR
+
+
+OUTPUT:
+0x100
+0x0
+UB
+0x7ffffff
