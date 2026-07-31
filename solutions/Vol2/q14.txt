@@ -1,0 +1,11 @@
+a + b is 300 which is beyond 255, the max number representable using character
+So the value wraps around to 300 - 255  - 1 = 44
+
+int does not have this issue
+
+In C, whenever we perform a comparison or an arithmatic on a datatype shorter than int, it automatically promotes that number to int, unless typecasted
+So s becoes -1 in int and us becomes 65535 so they are not equal 
+
+OUTPUT:
+44 300
+0 0
