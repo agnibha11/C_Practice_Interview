@@ -1,0 +1,5 @@
+Prints 0, then about 0.3000000119, then 2. Neither 0.1 nor 0.2 is exactly representable in binary floating
+point, so the sum is slightly off and the equality fails; the last line rounds down to 2 because the product is
+2.9999... and casting truncates. Correct practice: compare with a tolerance (fabsf(x-y) < 1e-6f), and in
+fixed-point hardware modelling prefer integer/fixed-point arithmetic entirely — which is why most RTL
+reference models in C avoid float.
