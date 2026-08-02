@@ -1,0 +1,5 @@
+Because STATUS is volatile, each mention is a genuine bus read — and on a clear-on-read register the first
+read WIPES the flags, so DONE_BIT is lost forever. Read once into a non-volatile local and test the
+snapshot. This is the flip side of the volatile lesson: volatile guarantees every access happens, so you must
+control exactly how many accesses you write. Same reasoning applies to FIFO data registers, where each
+read pops an entry.
