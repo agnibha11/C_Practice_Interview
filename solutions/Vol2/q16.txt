@@ -1,0 +1,5 @@
+On gcc/x86 this is 8 bytes: a and b share the first 4-byte unit (3+6 = 9 bits used), the anonymous zero-width
+field forces c to start a new unit, so c occupies a second 4-byte unit. What is implementation-defined: whether
+allocation starts from the LSB or the MSB end, whether fields may straddle unit boundaries, and the padding
+rules. That is why register maps use explicit masks and shifts instead — the same struct can map field a to
+bits [2:0] on one toolchain and [31:29] on another.
