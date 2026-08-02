@@ -1,0 +1,15 @@
+c is a singed char 0x80 will be thus a negative number it is thus
+which is -128.
+
+u is unsigned char so it will be simply 128
+
+the shifts always convert them to int so , the first one will be an arithmatic shift, while the second one will be a logical shift
+(this is called promotion to int)
+
+Plain char has implementation-defined
+signedness (signed on x86, unsigned on many ARM toolchains), so byte-manipulation code MUST say
+unsigned char or uint8_t.
+
+OUTPUT:
+-8 8
+FFFFFF80 80
