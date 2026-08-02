@@ -1,0 +1,5 @@
+They must be read from right to left
+
+A: p1 is a pointer to an unsigned int that is volatile: So the POINTED-TO data is itself volatile
+B: p2 is a volatile pointer to an unsigned int. So the pointer value itself is volatile, but the pointed to data is not
+C: p3 is a volatile pointer to a volatile unsigned int. So both pointer and the data are volatile
