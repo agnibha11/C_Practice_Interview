@@ -1,3 +1,6 @@
+#include <vector>
+
+
 vector<vector<int>> subsets(const vector<int>& a) {
     int n = a.size();
     vector<vector<int>> out;
