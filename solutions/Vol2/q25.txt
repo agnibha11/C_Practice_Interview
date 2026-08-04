@@ -1,0 +1,6 @@
+Three problems. (1) Many peripherals only decode 32-bit accesses; a 16-bit read may return garbage, fault,
+or read a whole word and give you the wrong half. (2) The reassembly assumes little-endian byte order — on
+big-endian, p[0] holds the HIGH half. (3) Atomicity: the register may change between the two reads, giving a
+torn value that never actually existed (a real hazard for free-running counters, where the standard fix is
+read-high, read-low, read-high-again and retry if it changed). Correct approach: access a register at its
+documented width, once
