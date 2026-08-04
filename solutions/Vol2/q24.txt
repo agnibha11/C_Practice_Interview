@@ -1,0 +1,2 @@
+volatile gurantees that the compiler will not reorder, merge or eliminate volatile access relative to one another, and that each appears exactly once
+It gurantees nothing else about the hardware
