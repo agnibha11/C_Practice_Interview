@@ -1,0 +1,11 @@
+b is pointing to a struct, and the size of the struct is 16 bytes
+So b + 2 advances by 16 bytes two times
+
+w is a pointer to an int, so it advances by 4 bytes twice
+
+C is at the 8th byte starting position in the struct, and b[1] starts at b + 16,
+
+OUTPUT:
+0x40000020
+0x40000008
+0x4000001c
