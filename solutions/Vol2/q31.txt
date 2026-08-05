@@ -1,0 +1,4 @@
+Output: 0 0 7 0 then 0 4. Rule: if ANY initialiser is present, all unmentioned members are zero-initialised (as if
+by static initialisation), which is why = {0} is the idiomatic way to clear an array or struct. Designated
+initialisers (C99) set specific elements and zero the rest — very handy for sparse lookup tables and for
+register-default structs where you only want to name a couple of fields
