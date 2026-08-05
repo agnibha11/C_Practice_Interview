@@ -1,0 +1,9 @@
+for logical and, anything other than 0 is true
+So, a++ is immediately, but in C, is a condition is initially false, it will not proceed to evaluate the rest so b never increments
+
+x++ immediately is 1, and this is suffiecient for the OR condition for the result to be true, so it never incereent the y at all
+
+
+OUTPUT:
+1 5 0
+1 5 2
