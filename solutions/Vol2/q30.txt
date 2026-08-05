@@ -1,0 +1,13 @@
+n = 3
+
+i = 2
+
+after i = 0, it decrements to i-0, meaning it becomes
+0xffffffff, which in unsigned in greater than 0, so loop never terminates
+
+
+OUTPUT:
+2
+1
+0
+. . . . (endless loop)
