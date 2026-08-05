@@ -1,0 +1,8 @@
+a and b are distinct arrays, so their addresses are different
+
+Most compilers will point p and q to the same location as the literals are same
+
+strcmp returns 0 if both the strings are same
+
+OUTPUT:
+0, 1, 1
