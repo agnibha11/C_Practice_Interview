@@ -1,0 +1,4 @@
+Output: 5, then 4, then 4. The ternary has ONE result type, determined by the usual arithmetic conversions
+across BOTH branches, regardless of which branch is taken: int and float give float (4 bytes), so line 2 is
+sizeof(float). Line 3: char and int give int, so 4 in C (this is 4 in C++ too here, since 0 is an int). The value 5 is
+converted to 5.0f then back to int.
