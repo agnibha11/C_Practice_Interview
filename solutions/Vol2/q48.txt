@@ -1,0 +1,18 @@
+pair_t is in memory like this
+lo has offset of 0
+hi has offset of 4
+
+so pair_t is 8 bytes in total (multiple of 4)
+
+
+frame_t is in memory like this
+tag has offset of 0
++ padding of 3
+p has offset of 4 (it has ints which need 4 byte alignment only)
+crc has offset of 12
++ padding of 1 byte
+
+so frame_t has size of 16 bytes which is a multple of 8
+
+OUTPUT:
+8 16 4 12 
