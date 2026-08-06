@@ -1,0 +1,6 @@
+The 3 padding bytes between type and len hold INDETERMINATE values — whatever was on the stack —
+and memcmp compares them too, so two logically identical structs can compare unequal. (Conversely,
+memcmp can report equality for structs holding different pointers to identical data.) Correct approach:
+compare member by member. If you truly need byte comparison — for hashing or a golden-model checksum
+— zero the struct first with memset(&a, 0, sizeof a) or use a designated initialiser, which zero-fills
+padding on most implementations but is still not guaranteed by the standard
