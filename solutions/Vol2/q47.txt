@@ -1,0 +1,11 @@
+* WRONG - sizes vary by platform */
+typedef struct { unsigned long CTRL; unsigned int STATUS; } bad_t;
+/* RIGHT - exact widths, guaranteed offsets */
+#include <stdint.h>
+typedef struct { volatile uint32_t CTRL; volatile uint32_t STATUS; } good_t;
+
+unsigned long is 4 bytes on 32-bit Linux and Windows-64, but 8 bytes on 64-bit Linux. Build the same
+driver for a host-based simulator on 64-bit Linux and STATUS silently moves from offset 4 to offset 8 —
+every register access after the first is wrong, and it compiles cleanly. Fixed-width types make the layout
+match the hardware datasheet on every toolchain. Same reason DPI/SystemC interfaces to a testbench must
+use uint32_t
