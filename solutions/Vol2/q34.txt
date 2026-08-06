@@ -1,0 +1,24 @@
+a static variable inside a function is not created in the stack but in the programs permanent memory, so it does not die with the end of the function
+
+trace of calls
+depth(3):
+calls = 1
+depth(2)
+calls = 2
+depth(1)
+calls = 3
+return 3
+
+//next call
+depth(3)
+calls = 4
+depth(2)
+calls = 5
+depth(1)
+calls = 6
+return 6
+
+
+
+OUTPUT:
+3 6
