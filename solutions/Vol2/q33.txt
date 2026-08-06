@@ -1,0 +1,5 @@
+The output is unspecified — commonly 3 2 1 on gcc/x86 (arguments evaluated right to left) but 1 2 3
+elsewhere. The C standard does not fix the evaluation ORDER of function arguments, only that each is fully
+evaluated before the call. The correct interview answer is to say it is unspecified and that you would
+sequence the calls into separate statements. Same family as Volume 1's i++ + i++, but note the
+difference: this one is unspecified (one of several orders), not undefined (anything at all).
