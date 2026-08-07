@@ -1,0 +1,1 @@
+Since it is static, both refere to the same static buffer
