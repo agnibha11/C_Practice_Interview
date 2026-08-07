@@ -1,0 +1,6 @@
+Packing removes all padding so the struct matches a wire/register format byte for byte — essential for
+protocol headers. The hazard: members are no longer naturally aligned, so &h.addr is a misaligned pointer.
+On ARMv7-M or MIPS, dereferencing it can fault or silently return rotated data; the compiler usually
+generates safe byte-by-byte accesses for direct member access, but taking the ADDRESS and passing it
+elsewhere loses that protection. Safer alternative: keep the struct unpacked and serialise with explicit shifts,
+which is also endianness-safe.
